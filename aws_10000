@@ -1,0 +1,81 @@
+ Glacier: is for data archivals, when you need
+ to only check it every now and then
+
+ Snowball: is a way to bring a large
+ amount of data into the data center
+
+ Storage Gateway: virtual machines
+ that you install in your data center
+ and will replicate it into s3
+
+ DATABASES
+
+ RDS: relational database such as: 
+ mySQL, postGresQL, Aurora 
+
+ DynamoDB: nonrelational database
+
+ Elasticcache: store queries or top 10 products rather than having a web service pull it from your databases
+
+ Redshift: is for data analysis and business income or profits. More complicated queries, also known as database housing
+
+ MIGRATION
+
+ AWS Migration Hub: it lets you track your migration in Amazon Web Services
+
+ Application Discovery Service: a way of tracking dependencies for our applications
+
+ Database Migration Service: Migrate into AWS from on-premise lets you visualize it
+
+ Server Migration Service: Migrates the virtual and server in AWS
+
+ Snowball: migrating TONS of data--terabyes into Amazon
+
+NETWORKING AND CONTENT DILVERY
+
+ VPC: Amazon Virtual Private Cloud, private data collector. Firewalls, securities etc.
+
+ Cloudfront: content delivery platform. Media assests, video files, image files.
+
+ Route53: is a DNS service, if you look for an address, it will resolve an IPV4 and IPV6 address
+
+ API Gateway: a way of creating one's own APIs for your own Services
+
+ Direct Connect: a way of running a dedicated line from your corp head office directly into AWS and connect to your VPC
+
+DEVELOPER TOOLS
+ 
+ CodeStar: getting a group of developers working together easily; basically project management
+
+ CodeCommit: a place to store your code, source control service, and store a private git repository
+
+ CodeBuild: once you have your code ready, codebuild will ready it for you and build it for you
+
+ CodeDeploy: automates application deployments
+
+ CodePipeline: continuous delivery service.
+
+ X-Ray: debug and analyze performance
+
+ Cloud9: IDE environment that allows you to develop on the web browser.
+
+MANAGEMENT TOOLS:
+
+ CloudWatch: a monitoring service, bread and butter for SysOps associate exam
+
+ CloudFormation: a solutions arcitect. A way of scripting infrastructure.
+
+ CloudTrail: everytime you click inside the management console, CloudTrail will log changes in your AWS
+ environment
+
+ Config: monitors the configuration of your entire AWS environment, visualize your AWS environment
+
+ OpsWorks: a more robust Elastic Beanstock. Configuration of your environments.
+
+ Service Catalog: a catalog service to keep track all AWS applications
+
+ Systems Manager: group your resources by different parts and applications, if you wanted to patch thousands
+ of EC2 instances
+
+ Trusted Advisor: Advice on secuirty, if you left your ports open, also tells you if you aren't using AWS Services
+ as much as you can, tells you how to save money using AWS.
