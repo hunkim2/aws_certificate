@@ -1,0 +1,23 @@
+What does IAM (Identity Access Management) give you?
+    -Centralised control of your AWS account
+    -Shared access to your AWS account
+    -Granular Permissions
+    -Identity Federation (including Active Directory, Facebook, LinkedIn etc.)
+    -Multifactor Authentication
+    -Provide temporary access for users/devices and services where necessary
+    -Allows your to set up your own password rotation policy
+    -Integrates with many different AWS services
+    -Supports PCI DSS Compliance
+
+Critical Terms:
+
+    -Users: thinks End Users (or people)
+    -Groups: A collection of users under one set of permissions, grouping Users together
+    -Roles: You create roles and can then assign them to AWS resources. Create roles and assign them to AWS resources.
+    -Policies: A document that defines (one or more permissions), you apply permissions to users, groups or roles.
+
+Lab:
+    -IAM is available globally
+        =Note that in the exam, one can be asked if a service if Global or specific to certain regions
+    -MFA: Multifactor Authentication on your root account
+        =Root account is the email address that you used to sign up to your AWS.
