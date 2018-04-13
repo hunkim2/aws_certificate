@@ -1,0 +1,29 @@
+S3 = Simple Storage Servics
+S3 is a safe place to store your files.
+
+It is Object based storage.
+-Object: things like videos and photos, PDFs, word documents or "flat files"
+-Designed to handle failure
+-Would not store an operating system or a database: you would do this on a block system
+
+The data is spread across multiple devices and facilities.
+
+-S3 is object based and allows you to upload files.
+-Files can be from 0 bytes to 5TB
+-There is unlimited storage
+-Files are stored in buckets (basically a directory)
+-Is a universal namespace, aka you cannot use those names that already been claimed.
+-Understand the format of bucket names
+-When you upload a file to S3 you will receive a HTTP 200 code if they upload was successful
+
+
+DATA CONSISTENCY MODEL FOR S3
+
+-Read after Write consistency for PUTS of new Objects
+    =PUT versus POST
+        ==e.i. Use PUT when dealing with particular question
+        ==e.i. Use POST when dealing with a list of questions
+-Eventual consistency for overwrite PUTS and DELETES (can take some time to propagate)
+    =Basically means that Read and Write will be instanteneous however Updating or Deleting an object
+    will take some time and will not be instant
+-
