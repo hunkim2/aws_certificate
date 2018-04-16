@@ -26,4 +26,84 @@ DATA CONSISTENCY MODEL FOR S3
 -Eventual consistency for overwrite PUTS and DELETES (can take some time to propagate)
     =Basically means that Read and Write will be instanteneous however Updating or Deleting an object
     will take some time and will not be instant
--
+
+-S3 is Object based and consist of the following
+    1. Key (This is simply the name of the object)
+    2. Value (This is simply the data and is made up of a sequence of bytes)
+    3. Version ID (Important for versioning)
+    4. Metadata (Data about the data you are storing)
+    5. Subresources
+        -Access Control Lists: who can access this object, fine grain permissions
+        -Torrent: BitTorrent Protocal
+
+-Amazon guarantees 99.999999999% durability for S3 information (11x9's)
+-Tiered Storage Available
+-Lifecycle Management
+    =Cycle certain data based on time
+-Versioning 
+-Encryption
+-Secure your data using Access Control Lists and Bucket Policies
+
+
+
+STORAGE TIERS/CLASSES
+-Stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilities concurrently
+-IA(Infrequently Accessed): For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are
+charged a retrieval fee.
+    =Data that is accumulated but not frequently accessed but is readily available
+    =Can be used for when getting employee payroll at the end of the year
+-Reduced Redudancy Storage: Designed to provide 99.99% durability and 99.99% availability of objects over a given year.
+    =Can be used when files can be easily replaced because the durability is not 11x9's
+-Glacier: Very cheap, but used for archival only. It takes 3 - 5 hours to restore from Glacier.
+
+In the exam it will clearly ask what is the best practice for the most monetarily sound practice for server architecture.
+
+
+CHARGED FOR?
+-Storage 
+-Requests 
+-Storage Management Pricing
+    =Associates different tags such as HR or Development departments
+-Data Transfer Pricing (replication to another region)
+-Transfer Acceleration
+    =enables fast, easy and secure transfers of files over long distances between end users and S3 bucket.
+    =Takes advantage of Amazon CloudFront's globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon
+    S3 over an optimized network path
+
+Exam Tips for S3 101:
+
+-Remember that S3 is Object based e.i. allows you to upload files.
+    =Don't use it for installing operating systems or databases, the performance will be shit.
+-Files can be from 0 Btyes to 5 5TB
+-There is unlimited storage
+-Files are stored in Buckets(aka folder)
+-S3 is a universal namespace
+-example URL: https://s3-eu-west-1.amazonaws.com/acloudguru
+-Read after Write consistency for PUTS of new Objects
+-Eventual consistency for overwite PUTS and DELETES (can take some time to propagate)
+-S3 Storage Classes/Tiers:
+    =S3
+    =IA
+    =Reduced Redundancy Storage
+    =Glacier
+-Remember the core fundamentals of an S3 object
+    =Key (name of file)
+    =Value (data)
+    =Versions ID
+    =Meta data
+    =Subresources (Access Control Lists, and Torrent)
+    =Read S3 FAQ before taking the exam.
+
+Exam Tips S3 Bucket:
+
+-Buckets are a universal name space
+-Upload an object to S3 receive a HTTP 200 code
+-Encryption
+    =Client Side Encryption
+    =Server Side Encryption
+        -Server side encryption with Amazon S3 Managed Keys (SSE-S3)
+        -Server side encryption with KMS (SSE-KMS)
+        -Server side encryption with Customer Provided Keys (SSE-C)
+    =Control access to buckets using either a bucket ACL or using Bucket Policies
+    =By default buckets are private and all objects stored inside them are private
+    

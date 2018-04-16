@@ -1,0 +1,10 @@
+Replication Rule:
+    You can either replicate the entire bucket or "prefixes"/sub-directories
+
+Replication will not occur unless an update/newest Version
+
+AWS CLI:
+
+`aws s3 ls`: lists out your s3 buckets
+`aws s3 cp --recursive s3://[name of bucket to copy] s3://[name of bucket destination of copy]`: copies bucket recursively to another bucket can be used
+for cross region replication.
