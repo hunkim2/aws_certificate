@@ -1,0 +1,19 @@
+If versions is activated:
+    -It will show the available versions of an uploaded object
+    -Making changes in video files that are large and tracking version it would take more funding
+
+Versioning also includes MFA (multi-factoring authentication)
+    Keeps these values using two forms of authentication:
+        -Your secuirty credentails
+        -The concatenation of a valid serial number, a space, and the six-digit code displayed on an approved authentication device
+    Adds additional authentication for these following operations:
+        -Change the versioning state of your bucket
+        -Permanently delete an object version
+
+EXAM TIPS:
+    -Stores all versions of an object (including all writes and even if you delete an object)
+    -Great backup tool
+    -Once enabled, Versioning cannot be disabled, only suspended
+    -Integrates with Lifecycle Rules
+    -Versioning's MFA(multi-factor authentication) capability, which uses multi-factor authentication, can be used
+    to provide an additional layer of security
