@@ -1,0 +1,11 @@
+Lifecycle Rules:
+
+Dictates when versions of objects are sent to IA (infrequently accessed) or to Glacier
+
+EXAM TIPS 101: 
+    -Can be used in conjunction with versioning
+    -Can be applied to current versions and previous versions.
+    -Following actions can now be done:
+        =Tranisition to the Standard - IA(infrequent access) storage class
+        =Archive to the Glacier Storage class
+        =Permanently Delete

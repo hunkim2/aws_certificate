@@ -8,3 +8,14 @@ AWS CLI:
 `aws s3 ls`: lists out your s3 buckets
 `aws s3 cp --recursive s3://[name of bucket to copy] s3://[name of bucket destination of copy]`: copies bucket recursively to another bucket can be used
 for cross region replication.
+
+EXAM TIPS:
+
+    -Versioning must be enabled on both the source and destination buckets
+    -Regions must be unique
+    -Files in an existing bucket are not replicated automatically. All subsequent updated files will be replicated automatically.
+    -You cannot replicate to multiple buckets or use daisy chaining (at this time)
+    -Delete markers are replicated (markers as in, they will be shown to be "ready to be deleted")
+    -Deleting individual versions or delete markers will not be replicated
+    -Under what Cross Region Replication is at a high level.
+

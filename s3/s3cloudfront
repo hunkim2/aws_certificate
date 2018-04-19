@@ -1,0 +1,20 @@
+What is a CDN?
+
+A content delivery network is a system of distributed servers (network) that deliver
+webpages and other web content to a user based on geographic locations of the user, the origin of the
+webpage and a content delivery server.
+
+KEY TERMINOLOGY:
+
+Edge Location - This is the location where content will be cached. This is seperate to an AWS Region/Availability Zone
+
+Origin - This is the origin of all the files that the CDN will distribute. This can be
+either an S3 bucket, an EC2 instance, an Elastic Load Balancer or Route53.
+    =where original files are from
+
+Distribution - This is the name given the CDN which consists of a collection of Edge locations
+
+Web Distribution - Typically used for Websites
+RTMP - Used for Media Streaming
+
+Edge Locations - Location where content will be cached. THis is seperate to an AWS Region/Availability Zone
