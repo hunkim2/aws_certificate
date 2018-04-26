@@ -1,0 +1,31 @@
+Storage Gateway is a service that connects an on-premises software appliance ith cloud-based storage to provide
+seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure.
+The service enables you to securely store data to the AWS cloud for scalable and cost-effective storage.
+
+Download as a virtual machine image:
+    VMI: is basically a hollow shell for your to download different softwares or operation systems on
+
+Storage Gateway is installed on a host in your OWN datacenter.
+
+Supports either VMware ESXi or Microsoft Hyper-V.
+
+
+Four Types of Storage Gateways:
+
+ -File Gateway (NFS): store flat files, word files, PDF's, videos etc..
+ -Volume Gate (iSCSI): block based storage (where you store operating systems on..) virtual harddisk, virtual installed SQL servers..
+    =Stored Volumes: where you store all data on site
+    =Cached Volumes: where you're only storing the most recently visited objects on site
+ -Tape Gateway (VTL)
+
+VOLUME GATEWAY:
+    -Think of it as a virtual harddrive where you can download OS or SQL servers onto 
+    -Data written to these volumes can be asynchronously backed up as point-in-time snapshots of your volumes and stored in the cloud as Amazon EBS snapshots
+        =EBS: elastic block store, virtual harddisk where we attach to our EC2 instances, which are our virtual machines.
+
+STORED VOLUMES:
+    -Makes everytime the client passes data to our on-premise applications, it will send it to our own premise storage and also send it to S3 Gateway here it will keep
+    a virtual copy of our data
+
+VIRTUAL VOLUMES:
+    -Will only save the latest acquired data rather than creating a whole new copy of the on-premise storage.
