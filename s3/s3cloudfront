@@ -18,3 +18,7 @@ Web Distribution - Typically used for Websites
 RTMP - Used for Media Streaming
 
 Edge Locations - Location where content will be cached. THis is seperate to an AWS Region/Availability Zone
+    =Edge locations are not just READ only, you can write to them too. (ie put an object on to them).
+    =Objects are cached for the life of the TTL (Time to Live)
+        ==You can set this 
+    =You can clear cached objects, but you will be charged
