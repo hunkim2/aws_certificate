@@ -29,3 +29,11 @@ STORED VOLUMES:
 
 VIRTUAL VOLUMES:
     -Will only save the latest acquired data rather than creating a whole new copy of the on-premise storage.
+
+EXAM TIPS:
+    File Gateway- For flat files, stored directly on S3.
+    Volume Gateway:
+        =Stored Volumes: Entire Dataset is stored on site and is asynchronously backed up to S3.
+        =Cached Volumes: Entire Dataset is stored on S3 and the most frequently accessed data is cached on site.
+    Gateway Virtual Tape Library (VTL):
+        =Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam etc.
