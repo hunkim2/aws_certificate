@@ -1,0 +1,10 @@
+Securing your buckets
+    -By default, all newly created buckets are PRIVATE
+    -You can setup access control control to your buckets using;
+        =Bucket Policies
+            ==Are bucket wide, so permissions are applied to the entire bucket
+        =Access Control Lists
+            ==Can drill down to specific objects inside the bucket
+    -S3 Buckets can be configured to create access logs which log all requests made to the S3 bucket.
+
+ENCRYPTION:
